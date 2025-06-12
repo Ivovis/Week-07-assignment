@@ -24,3 +24,9 @@ The _tags_ table hold the names of all the tags, I'd like to add image icons as 
 The _tags_tasks_ table is a junction table holding the connections between tags and tasks.
 
 This commit includes the basic client/server framework ready for expansion, from here I plan to create the SQL queries using the exported data from drawsql.com and run them on the supabase, then commit the SQLQueries.sql for your reference.
+
+###### Checkpoint 2
+
+Database queries to create the four tables have been made and run on supabase, the queries.sql can be found in the reporoot/misc folder, below is the schema as seen on supabase.com
+
+<img src="./misc/TaskAppSchemaSupabase.png" alt="diagram of the schema for the database taken from supabase.com" width="500">
