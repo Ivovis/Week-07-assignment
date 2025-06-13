@@ -27,13 +27,17 @@ The _tags_tasks_ table is a junction table holding the connections between tags 
 
 This commit includes the basic client/server framework ready for expansion, from here I plan to create the SQL queries using the exported data from drawsql.com and run them on the supabase, then commit the SQLQueries.sql for your reference.
 
+
 ---
+
+=======
 
 ###### Checkpoint 2
 
 Database queries to create the four tables have been made and run on supabase, the queries.sql can be found in the reporoot/misc folder, below is the schema as seen on supabase.com
 
 <img src="./misc/TaskAppSchemaSupabase.png" alt="diagram of the schema for the database taken from supabase.com" width="500">
+
 
 ---
 
@@ -64,3 +68,5 @@ This turned into a bit of a rabbit hole and I have limited the design to the bas
 My Key focus now is the main page and task view/editing page, I'll use place holders for the other two pages.
 
 Next checkpoint will be the basic framework client where I am able to navigate the whole app.
+
+
