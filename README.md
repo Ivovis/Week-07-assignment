@@ -9,6 +9,8 @@ There are three default tags 'Progressing','Completed' and 'On Hold'
 
 First job will be to design the tables and create the mono repository.
 
+---
+
 ##### Checkpoint 1
 
 I have my tables designed using drawsql.com:
@@ -25,8 +27,46 @@ The _tags_tasks_ table is a junction table holding the connections between tags 
 
 This commit includes the basic client/server framework ready for expansion, from here I plan to create the SQL queries using the exported data from drawsql.com and run them on the supabase, then commit the SQLQueries.sql for your reference.
 
+
+---
+
+=======
+
 ###### Checkpoint 2
 
 Database queries to create the four tables have been made and run on supabase, the queries.sql can be found in the reporoot/misc folder, below is the schema as seen on supabase.com
 
 <img src="./misc/TaskAppSchemaSupabase.png" alt="diagram of the schema for the database taken from supabase.com" width="500">
+
+
+---
+
+##### Checkpoint 3
+
+Wireframes completed, the App has been designed for mobile devices used in vertical orientation, personal stretch goals of landscape and desktop styling.
+
+I have four conditionally rendered pages;
+
+###### main page
+
+<img src="./misc/FrontPageWireframe.svg" alt="layout of main page" width="400">
+
+###### task editing page
+
+<img src="./misc/TaskPageWireframe.svg" alt="layout of task editing page" width="400">
+
+###### tag selecting and editing page
+
+<img src="./misc/TagPageWireframe.svg" alt="layout of task editing page" width="400">
+
+###### task list editing page
+
+This page has the same layout as the tag editing page
+
+This turned into a bit of a rabbit hole and I have limited the design to the basics, This may still be a design too far, I'll start with a single fixed task list and add in the functionality for adding/editing and deleting lists later if time, same for the tags, for now I'll have a fixed set of tags and add the editing later if time.
+
+My Key focus now is the main page and task view/editing page, I'll use place holders for the other two pages.
+
+Next checkpoint will be the basic framework client where I am able to navigate the whole app.
+
+
