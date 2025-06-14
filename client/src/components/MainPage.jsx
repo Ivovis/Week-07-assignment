@@ -1,5 +1,6 @@
 import { Link } from "react-router";
-import "./MainPage.css";
+import "./styles/MainPage.css";
+import TaskList from "./TaskList.jsx";
 
 export default function MainPage() {
   return (
@@ -11,21 +12,7 @@ export default function MainPage() {
         </p>
       </Link>
       <div>
-        <Link to="task">
-          <p id="taskName1" className="taskName">
-            A fake something to do 1
-          </p>
-        </Link>
-        <Link to="task">
-          <p id="taskName2" className="taskName">
-            A fake something to do 2
-          </p>
-        </Link>
-        <Link to="task">
-          <p id="taskName3" className="taskName">
-            A fake something to do 3
-          </p>
-        </Link>
+        <TaskList />
       </div>
       <Link to="tags">Fake Tags</Link>
     </>

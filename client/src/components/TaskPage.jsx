@@ -1,4 +1,4 @@
-import "./TaskPage.css";
+import "./styles/TaskPage.css";
 import { Link } from "react-router";
 
 export default function TaskPage() {

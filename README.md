@@ -87,3 +87,17 @@ I will return to the seed files after I have the assignment objectives completed
 Next I want to get the server up and running.
 
 ---
+
+#### Checkpoint 6
+
+Created server and a route names /init to return a list of 'task list names' and the full set of tasks, remembering to stick with the assignment objectives. (I have the full app in my mind churning over how to include everything needed!)
+
+---
+
+#### Checkpoint 7
+
+Created component to display the tasks this uses .map (TaskList.jsx)
+Created additional database test data - testData2.sql, more orientated towards actual tasks.
+Added interval timer to the TaskList Component and checked that it updates when I add a row using subabase SQL editor - this is working.
+
+---
