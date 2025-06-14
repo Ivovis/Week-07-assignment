@@ -71,6 +71,19 @@ Next checkpoint will be the basic framework client where I am able to navigate t
 
 ##### Checkpoint 4
 
-This took way longer than it should, I had completly forgotten the workshop on SPA, but eventually I arrived where I need to be, I now have a basic client with navigation, next up I will create the database reset and test data seed files.
+This took way longer than it should, I had completely forgotten the workshop on SPA, but eventually I arrived where I need to be, I now have a basic client with navigation, next up I will create the database reset and test data seed files.
+
+---
+
+#### Checkpoint 5
+
+I discovered that creating or rather truncating database tables that have foreign key constraints should not be done in separate SQL instructions, I kept getting errors while debugging my seed files, so I switched to pure SQL using the editor on supabase.com and got both queries working, two files, one to create the default tables with default entries and the other to create the tables and more extensive test entries, named defaultDataBase.sql and testData.sql respectively, they can be found in the misc directory in the repo root. During my attempt at the js seed files I added the following to package.json
+
+    "resetDB": "node resetDatabase",
+    "testDB": "node installTestData"
+
+I will return to the seed files after I have the assignment objectives completed.
+
+Next I want to get the server up and running.
 
 ---

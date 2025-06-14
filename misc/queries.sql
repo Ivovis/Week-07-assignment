@@ -1,3 +1,9 @@
+/*
+    Original queries used to create the tables.
+    also see testData.sql and defaultDataBase.sql
+    defaultDataBase.sql should be used for deployment.
+*/
+
 CREATE TABLE IF NOT EXISTS task_list(
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     name VARCHAR(25) NOT NULL
