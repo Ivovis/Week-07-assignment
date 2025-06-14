@@ -10,7 +10,8 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<MainPage />} />
-      <Route path="/task" element={<TaskPage />} />
+      <Route path="/task" element={<TaskPage type="edit" />} />
+      <Route path="/newtask" element={<TaskPage type="new" />} />
       <Route path="/list" element={<ListPage />} />
       <Route path="/tags" element={<TagsPage />} />
     </Routes>

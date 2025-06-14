@@ -12,6 +12,7 @@ export default function MainPage() {
         </p>
       </Link>
       <div>
+        <Link to="newtask">Add New</Link>
         <TaskList />
       </div>
       <Link to="tags">Fake Tags</Link>

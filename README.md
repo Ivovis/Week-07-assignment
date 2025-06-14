@@ -101,3 +101,22 @@ Created additional database test data - testData2.sql, more orientated towards a
 Added interval timer to the TaskList Component and checked that it updates when I add a row using subabase SQL editor - this is working.
 
 ---
+
+#### Checkpoint 8
+
+I have fleshed out TaskPage and called it with a parameter that states 'new' or 'edit' I'm not sure yet how to pass in an existing task from the TaskList component (my plan is to switch to TaskPage when the user clicks on an esiting task, but thats for later)
+
+I have added the post route to the server and created the form, find it in TaskPage.jsx, It took me a while to work out how to return from the form after the submission had been completed, I discovered the useNavigate searching on line, we have not covered this so I wonder if I'm missing something here.
+
+I should now have met all the assignment requirements:
+
+🎯 Create a client using React. - done
+🎯 Use Express to create your server, using both GET and POST endpoints. - Done  
+🎯 Build a React form for users to create posts. - done
+🎯 Create multiple pages using React Router. - done  
+🎯 Design a database schema, and seed the database with some realistic data. - done
+🎯 Use SQL to retrieve posts from the database in your Express server. - done
+🎯 Display all posts using .map(). - done
+🎯 Use an interval and useEffect() to poll your database. - done
+
+For the life of me I have no idea how to use .env.production so I can have the correct url on deployment thats my next job after this commit,
