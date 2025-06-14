@@ -3,8 +3,8 @@ import { Link, useNavigate } from "react-router";
 import { useState } from "react";
 import MainPage from "./MainPage";
 
-const SERVER_URL = "http://localhost:10000";
-// const SERVER_URL = ""
+//const SERVER_URL = "http://localhost:10000";
+const SERVER_URL = "https://week-07-assignment-siif.onrender.com";
 
 export default function TaskPage({ type }) {
   // I hate Prittier

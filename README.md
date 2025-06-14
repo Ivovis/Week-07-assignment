@@ -119,4 +119,6 @@ I should now have met all the assignment requirements:
 🎯 Display all posts using .map(). - done
 🎯 Use an interval and useEffect() to poll your database. - done
 
-For the life of me I have no idea how to use .env.production so I can have the correct url on deployment thats my next job after this commit,
+For the life of me I have no idea how to use .env.production so I can have the correct url on deployment thats my next job after this commit.
+
+updated my hard coded server url's in two components on the client
