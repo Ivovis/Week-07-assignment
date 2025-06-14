@@ -1,4 +1,4 @@
-import "./TagsPage.css";
+import "./styles/TagsPage.css";
 import { Link } from "react-router";
 
 export default function TagsPage() {
