@@ -7,7 +7,7 @@ import MainPage from "./MainPage";
 const SERVER_URL = "https://week-07-assignment-siif.onrender.com";
 
 export default function TaskPage({ type }) {
-  // I hate Prittier
+  // I hate prettier
   const navigate = useNavigate();
 
   const [taskData, setTaskData] = useState({
@@ -20,7 +20,7 @@ export default function TaskPage({ type }) {
   let message = "I have no idea what I am doing!";
 
   if (type === "new") {
-    message = "Create New Task";
+    message = "Create A Beautiful New Task";
   }
 
   if (type === "edit") {
@@ -51,32 +51,42 @@ export default function TaskPage({ type }) {
 
   return (
     <>
-      <h2>{message}</h2>
       {
         <form onSubmit={handleSubmit}>
-          <label htmlFor="title">Title: </label>
-          <input
-            type="text"
-            name="title"
-            required
-            placeholder="Task Title"
-            value={taskData.title}
-            onChange={handleTaskData}
-          />
-          <label htmlFor="text">Details: </label>
-          <input
-            type="text"
-            name="text"
-            placeholder="add details about the task here"
-            value={taskData.text}
-            onChange={handleTaskData}
-          />
-
-          <button type="submit">Add</button>
+          <div className="newTaskPage">
+            <h2>{message}</h2>
+            {/* <label htmlFor="title">Title: </label> */}
+            <input
+              className="taskTitle"
+              type="text"
+              name="title"
+              required
+              placeholder="Task Title"
+              value={taskData.title}
+              onChange={handleTaskData}
+              maxLength={25}
+            />
+            {/* <label htmlFor="text">Details: </label> */}
+            <textarea
+              className="taskText"
+              type="text"
+              name="text"
+              placeholder="add details about the task here"
+              value={taskData.text}
+              onChange={handleTaskData}
+              maxLength={299}
+            />
+            <div className="buttons">
+              <Link to="/" className="cancelButton">
+                Cancel
+              </Link>
+              <button type="submit" className="addButton">
+                Add
+              </button>
+            </div>
+          </div>
         </form>
       }
-
-      <Link to="/">Cancel</Link>
     </>
   );
 }

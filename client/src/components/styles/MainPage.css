@@ -1,0 +1,11 @@
+.mainPage {
+  color: aliceblue;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  padding: 1rem;
+  background-color: rgb(40, 85, 3);
+  height: 100dvh;
+}
