@@ -25,7 +25,7 @@ export default function TaskList() {
 
   return (
     <>
-      <div className="listItmes">
+      <div className="listItems">
         {tasksList.map((taskItem) => {
           return (
             <section key={taskItem.id}>

@@ -5,17 +5,21 @@ import TaskList from "./TaskList.jsx";
 export default function MainPage() {
   return (
     <>
-      <p>Main page</p>
-      <Link to="list">
-        <p id="listName" className="listName">
-          A fake List Name
-        </p>
+      {/* <p>Main page</p> */}
+      <Link to="list" className="changeList">
+        <p id="listName">My First List</p>
       </Link>
       <div>
-        <Link to="newtask">Add New</Link>
+        <Link to="newtask" className="addNew">
+          Add New
+        </Link>
+      </div>
+      <div>
         <TaskList />
       </div>
-      <Link to="tags">Fake Tags</Link>
+      <Link to="tags" className="changeTag">
+        Fake Tags
+      </Link>
     </>
   );
 }

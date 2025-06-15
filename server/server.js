@@ -19,6 +19,7 @@ app.get("/", function (req, res) {
   res.json({ message: "its out there .....waiting." });
 });
 
+// this has been tested and is working - I've noticed a large delay sometime when opening the app for the first time, I suspect this is a subabase issue
 app.get("/init", async (req, res) => {
   // get list of task names
   let query = await db.query(`SELECT * from task_list`);
@@ -40,6 +41,7 @@ app.get("/init", async (req, res) => {
   res.json(initData);
 });
 
+// this has been tested and is working
 app.post("/addTask", (req, res) => {
   // destructure the body
   const { title, text, priority, task_list_id } = req.body;
@@ -56,9 +58,8 @@ app.post("/addTask", (req, res) => {
   }
 });
 
+// I never got to test this
 app.delete("/deletetask/:id", (req, res) => {
-  //we will use params to set what id we want to target for deletion
-  //in the endpoint, we can set up dynamic params using : (for example, /:id)
   const taskId = req.params.id;
 
   try {
@@ -71,10 +72,8 @@ app.delete("/deletetask/:id", (req, res) => {
   }
 });
 
-//Update is a mix of delete and post --> we will use the body to add the updated data, and the params to target the correct entry
-
-app.put("/updateBiscuit/:id", (req, res) => {
-  // /:id --> dynamic params are params that change in value
+// I never got to test this
+app.put("/updatetask/:id", (req, res) => {
   const taskBody = req.body; //updated biscuit data
   const taskId = req.params.id; //target the correct biscuit
 
@@ -85,13 +84,13 @@ app.put("/updateBiscuit/:id", (req, res) => {
         taskBody.title,
         taskBody.text,
         taskBody.priority,
-        taskBody.tasl_list_id,
+        taskBody.task_list_id,
         taskId,
       ]
     );
     res.status(200).json({ success: true });
   } catch (error) {
-    console.log("Error:check your connection string?");
+    console.log("Error: check your connection string?");
     res.status(500).json({ success: false });
   }
 });
