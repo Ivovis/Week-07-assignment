@@ -9,6 +9,8 @@ There are three default tags 'Progressing','Completed' and 'On Hold'
 
 First job will be to design the tables and create the mono repository.
 
+    I've noticed a large delay sometimes when opening the app for the first time, I suspect this is a subabase issue, the effect is the list of tasks between the "Add New" and "Fake Tags" buttons will be missing, the normal refresh cycle will catch up given enough time.
+
 ---
 
 ##### Checkpoint 1
@@ -111,12 +113,19 @@ I have added the post route to the server and created the form, find it in TaskP
 I should now have met all the assignment requirements:
 
 🎯 Create a client using React. - done
-🎯 Use Express to create your server, using both GET and POST endpoints. - Done  
+
+🎯 Use Express to create your server, using both GET and POST endpoints. - Done
+
 🎯 Build a React form for users to create posts. - done
-🎯 Create multiple pages using React Router. - done  
+
+🎯 Create multiple pages using React Router. - done
+
 🎯 Design a database schema, and seed the database with some realistic data. - done
+
 🎯 Use SQL to retrieve posts from the database in your Express server. - done
+
 🎯 Display all posts using .map(). - done
+
 🎯 Use an interval and useEffect() to poll your database. - done
 
 For the life of me I have no idea how to use .env.production so I can have the correct url on deployment thats my next job after this commit.
@@ -128,3 +137,32 @@ updated my hard coded server url's in two components on the client
 Started the styling, I use that term with some contempt, The Add new task page accessed via 'Add New' on the main page seems to be behaving mostly as I want, the main page at this stage is a mess, the colors at this stage are just so I can identify the elements.
 
 This commit serve just to document at least some progress on styling.
+
+#### Checkpoint 10
+
+I'm out of time. this is the last commit.
+
+Reflection notes.
+
+🎯 What requirements did you achieve?
+
+    All of the required.
+
+🎯 Were there any requirements or goals that you were unable to achieve?
+
+    I failed to meet the design I set out to achieve, look at the wire frames look at the result.
+    As the app sits now, its enough for me to quit.
+
+🎯 If so, what was it that you found difficult about these tasks?
+
+    Not enough time, I don't think there was anything in the requirements or stretch goals that I could not achieve given more time, I still don't have a good grip on CSS and I think my initial design albeit a simple one was too much for the time I needed.
+
+Had assignment been more specific rather than leaving the door open for us to develop anything we wanted, may have been more productive.
+
+The colors used in the app as it sits now are far from what I wanted, there are buttons missing, I have the route to delete singular tasks but never got to the point where I could include it from the client end, The tag feature is completely missing although the table exists and the links for the demo data exist.
+
+I didn't have a weekend this week.
+
+I've noticed a large delay sometimes when opening the app for the first time, I suspect this is a subabase issue, the effect is the list of tasks between the "Add New" and "Fake Tags" buttons will be missing, the normal refresh cycle will catch up given enough time.
+
+I did not have time to chase down how to use .env and .env.production - this is still a mystery to me.
