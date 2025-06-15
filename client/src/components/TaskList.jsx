@@ -25,12 +25,13 @@ export default function TaskList() {
 
   return (
     <>
-      <div>
+      <div className="listItmes">
         {tasksList.map((taskItem) => {
           return (
-            <p key={taskItem.id} className="taskTitle">
-              {taskItem.title}: &quot;{taskItem.text}&quot;
-            </p>
+            <section key={taskItem.id}>
+              <p className="taskTitle2">{taskItem.title}:</p>
+              <p className="taskText2">{taskItem.text}:</p>
+            </section>
           );
         })}
       </div>

@@ -104,7 +104,7 @@ Added interval timer to the TaskList Component and checked that it updates when 
 
 #### Checkpoint 8
 
-I have fleshed out TaskPage and called it with a parameter that states 'new' or 'edit' I'm not sure yet how to pass in an existing task from the TaskList component (my plan is to switch to TaskPage when the user clicks on an esiting task, but thats for later)
+I have fleshed out TaskPage and called it with a parameter that states 'new' or 'edit' I'm not sure yet how to pass in an existing task from the TaskList component (my plan is to switch to TaskPage when the user clicks on an exiting task, but thats for later)
 
 I have added the post route to the server and created the form, find it in TaskPage.jsx, It took me a while to work out how to return from the form after the submission had been completed, I discovered the useNavigate searching on line, we have not covered this so I wonder if I'm missing something here.
 
@@ -122,3 +122,9 @@ I should now have met all the assignment requirements:
 For the life of me I have no idea how to use .env.production so I can have the correct url on deployment thats my next job after this commit.
 
 updated my hard coded server url's in two components on the client
+
+#### Checkpoint 9
+
+Started the styling, I use that term with some contempt, The Add new task page accessed via 'Add New' on the main page seems to be behaving mostly as I want, the main page at this stage is a mess, the colors at this stage are just so I can identify the elements.
+
+This commit serve just to document at least some progress on styling.
